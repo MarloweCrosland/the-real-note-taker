@@ -29,7 +29,7 @@ function saveNote(body, notesArray) {
         //using path to join the folders directory name with the db file
         path.join(__dirname, './db/db.json'),
         //the null and 2 arguments format the data to be more readable
-        JSON.stringify({notes: notesArray}, null, 2)
+        JSON.stringify(notesArray, null, 2)
     );
     return note;
 }
